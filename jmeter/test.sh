@@ -20,7 +20,7 @@ rm -f $T_DIR/test-plan.jtl $T_DIR/jmeter.log  > /dev/null 2>&1
 ./run.sh $rootPath -Dlog_level.jmeter=DEBUG \
 	-Jhost=$host \
 	-n -t /test/$testFile -l $T_DIR/test-plan.jtl -j $T_DIR/jmeter.log \
-	-e -o $R_DIR
+	-e -o $R_DIR -Jjmeterengine.force.system.exit=true
 
 echo "==== jmeter.log ===="
 cat $T_DIR/jmeter.log
