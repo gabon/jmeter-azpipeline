@@ -23,4 +23,4 @@ jobs:
   - task: publishhtmlreport@1
     inputs:
       htmlType: 'Jmeter'
-      JmeterReportsPath: '$(Build.SourcesDirectory)/report'
+      JmeterReportsPath: jmeter/report
