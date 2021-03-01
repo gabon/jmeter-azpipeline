@@ -2,6 +2,7 @@
 #
 # Run JMeter Docker image with options
 
+echo "run.sh"
 NAME="jmetertest"
 IMAGE="justb4/jmeter:latest"
 ROOTPATH=$1

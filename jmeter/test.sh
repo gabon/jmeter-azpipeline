@@ -1,5 +1,6 @@
 #!/bin/bash
 #
+echo "run.sh"
 rootPath=$1
 testFile=$2
 host=$3
