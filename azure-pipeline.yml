@@ -20,7 +20,8 @@ jobs:
     inputs:
       targetPath: jmeter/report
       artifact: jmeter
+
   - task: publishhtmlreport@1
     inputs:
       htmlType: 'Jmeter'
-      JmeterReportsPath: jmeter/report
+      JmeterReportsPath: '$(Build.SourcesDirectory)/jmeter/report'
